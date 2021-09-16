@@ -13,7 +13,22 @@ h1,h2,h3,a,p{
     font-size: 20px;
     text-transform: uppercase;
     line-height: 23px;
+    position: relative;
     
+}
+.title h3::after{
+    
+    content: '';
+    position: absolute;
+    display: block;
+    width: 37px;
+    height: 2px;
+    border-radius: 5px;
+top: 35px;    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: linear-gradient(270deg, rgba(250, 120, 155, 0.0001) -12.35%, #F02D4E 46.95%, rgba(242, 67, 98, 0.0001) 108.67%);
+  
+
 }
 .main-title h1{
     font-size: 35px;
@@ -156,4 +171,36 @@ body{
     color: #fff;
     opacity: 0.6;
     line-height: 50px;
+}
+header{
+    display: none;
+}
+@media (min-width:768px) {
+    header{
+        display:block;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .logo{
+        padding: 10px;
+        padding-left: 0;
+    max-width: 159px;
+    }
+    nav a{
+        text-decoration: none;
+    }
+    .sign-upmenu >span:last-child{
+        margin-left: 25px;
+    }
+    .logo img{
+        width: 100%;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
