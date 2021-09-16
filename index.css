@@ -172,14 +172,55 @@ body{
     opacity: 0.6;
     line-height: 50px;
 }
-header{
+header,.two,.forgot{
     display: none;
 }
 @media (min-width:768px) {
+    .two,.forgot{
+        display: block;
+    }
+    .forgot a{
+        text-decoration: none;
+    }
+    .next-button{
+        background-color: #e85254;
+        opacity: 1;
+    }
     header{
         display:block;
         max-width: 1200px;
         margin: auto;
+    }
+    .main-body{
+        margin-bottom: 0!important;
+    }
+    .two a{
+        text-decoration: none;
+    }
+    .two{
+        margin: 0 -25px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 35px;
+    }
+    .innerwrapper{
+        max-width: 420px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .main-title .subtext{
+        font-size: 20px;
+        line-height: 23px;
+        color: #767676;
+        font-weight:normal;
+    }
+    .main-title{
+        text-align: center;
+    }
+    .title-wrapper{
+        display: none;
     }
     .logo{
         padding: 10px;
